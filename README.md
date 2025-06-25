@@ -1,4 +1,4 @@
-# 🎓 Student Register System
+#![](./public/image/favicon.svg) Student Registration System 
 
 A responsive and interactive web application that allows users to register student details, display them dynamically, update or delete entries, and persist data using **Local Storage**.
 
@@ -7,7 +7,7 @@ A responsive and interactive web application that allows users to register stude
 ## 📸 Screenshots
 
 ### 🖼️ Form & Table Interface
-![Student Form Screenshot](./assets/home.png)
+(./assets/home.png)
 
 ### 🖼️ Dashboard Display
 ![Dashboard Screenshot](./assets/dashboard.png)
