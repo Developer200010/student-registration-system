@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+.btn {
+    @apply p-2 text-black font-semibold border-2 w-[250px] bg-amber-300 hover:bg-amber-400 hover:scale-105 transition duration-300 rounded-md shadow-md
+}
+
+.inp {
+    @apply border-2 px-2 py-1 w-full rounded-lg bg-white text-black
+}
+
+/** Text Gradient Example */ 
+/** Text Gradient Example */ 
+.text-gradient {
+ color: #15b6ce; 
+ background-image: linear-gradient(45deg, #15b6ce , #d637ca 50%, #f5f4ca 100%); 
+ background-clip: text; 
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent; 
+}
+
+.navBg{
+background: #ab1d1d;
+background: linear-gradient(90deg, rgba(171, 29, 29, 1) 0%, rgba(12, 14, 20, 1) 51%);
+}
+
+.cardAnimate {
+    animation:slide-in 1s linear 0.5s 1 running;
+}
+
+ @keyframes slide-in {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+ 
+  .textAnimate {
+    animation: slide-down 1s ease-out 0.5s 1 running;
+  }
+
+  @keyframes slide-down {
+    from {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rowAnimate {
+  animation: slideFadeIn 0.4s ease-out forwards;
+}
+
+  

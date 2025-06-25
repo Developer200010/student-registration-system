@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Register</title>
+  <link rel="icon" href="../../public/image/favicon.svg" type="image/png" />
+
+  <link rel="stylesheet" href="../output.css" />
+  <style>
+    tr:nth-child(even) {
+  background-color: #989898;
+}
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-gray-900 to-black text-white min-h-screen">
+    <div>
+        <a href="../pages/useSection.html" class="mt-4 ml-5"><button class="mt-4 hover:cursor-pointer">⬅️</button></a>
+    </div>
+  <section class="flex flex-wrap md:flex-nowrap gap-6 p-4 w-full justify-center">
+    
+    <!-- Left: Form -->
+    <figure class="w-full md:w-1/2 border border-gray-700 rounded-xl p-6 bg-gray-800 shadow-lg">
+      <h4 class="text-xl font-bold text-amber-400 mb-2">📋 Student Details</h4>
+      <hr class="border-gray-600 mb-6" />
+      <form id="studentForm" class="space-y-4">
+
+        <div class="flex flex-col items-start">
+          <label for="studentName" class="mb-1 text-sm text-gray-300">Student Name</label>
+          <input type="text" id="studentName" placeholder="Enter Student Name"
+            class="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:border-amber-400 transition">
+        </div>
+
+        <div class="flex flex-col items-start">
+          <label for="studentId" class="mb-1 text-sm text-gray-300">Student ID</label>
+          <input type="text" id="studentId" placeholder="Enter Student ID"
+            class="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:border-amber-400 transition">
+        </div>
+
+        <div class="flex flex-col items-start">
+          <label for="email" class="mb-1 text-sm text-gray-300">Email ID</label>
+          <input type="email" id="email" placeholder="Enter Student Email"
+            class="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:border-amber-400 transition">
+        </div>
+
+        <div class="flex flex-col items-start">
+          <label for="contact" class="mb-1 text-sm text-gray-300">Contact No</label>
+          <input type="text" id="contact" placeholder="Enter Student Contact"
+            class="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:border-amber-400 transition">
+        </div>
+
+        <button type="submit" id="submitBtn"
+          class="bg-amber-400 text-black font-bold py-2 px-4 rounded-md hover:bg-amber-500 transition duration-300">
+          Register
+        </button>
+      </form>
+    </figure>
+
+    <!-- Right: Table -->
+    <figure class="w-full md:w-1/2 border border-gray-700 rounded-xl p-6 bg-gray-800 shadow-lg overflow-y-auto max-h-screen">
+      <h4 class="text-xl font-bold text-green-400 mb-2">📑 Student Data</h4>
+      <hr class="border-gray-600 mb-4" />
+      <div class="overflow-auto max-h-[80vh]">
+        <table class="min-w-full text-left text-sm">
+          <thead class="bg-gray-700 text-gray-100 sticky top-0 z-10">
+            <tr>
+              <th class="px-4 py-2">Name</th>
+              <th class="px-4 py-2">ID</th>
+              <th class="px-4 py-2">Email</th>
+              <th class="px-4 py-2">Contact</th>
+              <th class="px-4 py-2">Modify</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody" class="divide-y divide-gray-600">
+            <!-- JS Populated Rows -->
+          </tbody>
+        </table>
+      </div>
+    </figure>
+  </section>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
